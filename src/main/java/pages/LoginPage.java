@@ -32,4 +32,7 @@ public class LoginPage {
         enterPassword(password);
         clickLogin();
     }
+    public boolean isLoginErrorDisplayed() {
+    return driver.findElements(By.id("error")).size() > 0;
+}
 }
